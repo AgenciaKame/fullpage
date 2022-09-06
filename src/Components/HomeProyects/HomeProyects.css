@@ -1,0 +1,156 @@
+.home-proyects {
+  margin-top: 50px;
+}
+.home-proyects-title > h2 {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+.home-proyects-info {
+  margin-top: 50px;
+}
+.home-proyects-carousel {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 323px;
+  height: 287px;
+}
+.home-proyects-carousel > :nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-controls-proy {
+  z-index: 15;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-proyects {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.carousel-proyects > h3 {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.carousel-proyects > p {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #535353;
+}
+.carousel-proyects > span {
+  display: block;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #888888;
+}
+.carousel-target-proy {
+  position: absolute;
+  top: 228px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 67px;
+  height: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-target-proy > div {
+  width: 11px;
+  height: 11px;
+  background: rgba(214, 116, 72, 0.5);
+  border-radius: 50%;
+}
+.carousel-target-proy > div.current {
+  background: #d67448;
+}
+
+@media screen and (min-width: 768px) {
+  .home-proyects {
+    margin-top: 100px;
+  }
+  .home-proyects-title > h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .carousel-proyects-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    gap: 15px;
+    width: 90%;
+  }
+  .proyect-desktop {
+    position: relative;
+    width: 200px;
+    opacity: 0.7;
+  }
+  .proyect-desktop > h3 {
+    width: 160px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .proyect-desktop > p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 8px 0;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .proyect-desktop > span {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .proyect-desktop.main {
+    width: 230px;
+    margin-top: 80px;
+    opacity: 1;
+  }
+  .proyect-desktop.main > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  .proyect-desktop.main > h3 {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,278 @@
+.brand {
+  margin-top: 50px;
+}
+.brand-title {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+.brand-title-bg {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: -1;
+  width: 257.86px;
+  height: 187.08px;
+}
+.brand-title > h2 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  padding: 0 10px;
+  color: #000000;
+}
+.brand-info {
+  position: relative;
+  margin-top: 50px;
+  height: 300px;
+}
+.carousel-controls {
+  z-index: 3;
+  position: absolute;
+  top: 86px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.carousel-controls > img {
+  width: 13px;
+  height: 22px;
+  object-fit: cover;
+}
+.carousel-brand {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+.message-box {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  width: 239px;
+  height: 215px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.message-box > h3 {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.message-box > p {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #535353;
+}
+.message-box > button {
+  width: 196px;
+  height: 36px;
+  margin: 0 auto;
+  background: #ededed;
+  border-radius: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.carousel-target {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 67px;
+  height: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-target > div {
+  width: 11px;
+  height: 11px;
+  background: rgba(214, 116, 72, 0.5);
+  border-radius: 50%;
+}
+.carousel-target > .current {
+  background: #d67448;
+}
+
+@media screen and (min-width: 768px) {
+  .brand {
+    margin-top: 100px;
+  }
+  .brand-title {
+    max-width: 70%;
+  }
+  .brand-title > h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .brand-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 350px;
+  }
+  .brand-info > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  .message-desktop {
+    width: 180px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .message-desktop > h3 {
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    text-transform: uppercase;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .message-desktop > p {
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #535353;
+  }
+  .message-desktop > button {
+    width: 150px;
+    height: 52px;
+    margin: 0 auto;
+    background: #ededed;
+    border-radius: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brand {
+    margin-top: 150px;
+  }
+  .brand-title {
+    max-width: 70%;
+  }
+  .brand-title > h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .brand-info {
+    margin-top: 50px;
+    height: 390px;
+  }
+  .message-desktop {
+    width: 255px;
+    height: 269px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .message-desktop > h3 {
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .message-desktop > p {
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #535353;
+  }
+  .message-desktop > button {
+    width: 231px;
+    height: 52px;
+    margin: 0 auto;
+    background: #ededed;
+    border-radius: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}

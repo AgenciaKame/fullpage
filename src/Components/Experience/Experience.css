@@ -1,0 +1,111 @@
+.about-main {
+  padding: 50px 5%;
+  background: #f1f1f1;
+}
+.about-main-image {
+  position: relative;
+  height: 350px;
+}
+.about-main-image > img {
+  border: 3px solid rgba(4, 122, 110, 0.62);
+  border-radius: 63%;
+  width: 268.92px;
+  height: 210.86px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.about-main-image > div {
+  width: 268.92px;
+  height: 210.86px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: rotate(-44.86deg);
+  border: 3px solid rgba(4, 122, 110, 0.62);
+  border-radius: 55%;
+}
+.about-main-text > p {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+.about-main-text > button {
+  display: block;
+  width: 166px;
+  height: 40px;
+  margin: 35px auto;
+  border: none;
+  background: #d67448;
+
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .about-main {
+    display: flex;
+    padding: 50px 10%;
+    align-items: center;
+  }
+  .about-main-image {
+    height: 300px;
+  }
+  .about-main-text {
+    position: absolute;
+    margin-top: 30px;
+    left: auto;
+    right: 8%;
+    width: 40%;
+    text-align: left;
+  }
+  .about-main-text > p {
+    margin: 0;
+  }
+  .about-main-text > button {
+    margin: 35px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-main {
+    padding: 100px 10%;
+  }
+  .about-main-image {
+    position: relative;
+    height: 500px;
+  }
+  .about-main-image > img {
+    top: 80px;
+    width: 482.67px;
+    height: 365.56px;
+  }
+  .about-main-image > div {
+    top: 80px;
+    width: 482.67px;
+    height: 365.56px;
+  }
+  .about-main-text > p {
+    width: 80%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about-main-text > button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

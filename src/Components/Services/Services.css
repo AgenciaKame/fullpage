@@ -1,0 +1,145 @@
+.services {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 45px;
+}
+.service-image {
+  position: relative;
+  width: 100%;
+  max-width: 309px;
+  height: 263px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-image > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: drop-shadow(-15px 19px 34px rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
+}
+.service-image > span {
+  display: block;
+  width: 90%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  text-align: center;
+}
+.service-info {
+  width: 90%;
+  margin: 0 auto;
+}
+.service-info > p {
+  margin: 20px 0;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #03293c;
+}
+.service-info > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 166px;
+  height: 40px;
+  margin: 20px auto 0;
+  background: #d67448;
+  border: none;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .services {
+    margin-top: 100px;
+    width: 80%;
+    gap: 90px;
+  }
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .services > :nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .service-image {
+    width: 90%;
+    max-width: 550px;
+    height: 270px;
+    margin: 0;
+    border-radius: 40px;
+  }
+  .service-image > img {
+    filter: drop-shadow(-10px 15px 25px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+  }
+  .service-info {
+    width: 90%;
+  }
+  .service-info > h3 {
+    display: block;
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+  }
+  .service-info > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .service-info > button {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .services {
+    margin-top: 150px;
+    width: 80%;
+    gap: 130px;
+  }
+  .service-image {
+    height: 393px;
+    margin: 0;
+    border-radius: 40px;
+  }
+  .service-info > h3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .service-info > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .service-info > button {
+    margin: 40px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,119 @@
+.faq {
+  background: #efefef;
+  padding: 50px 5%;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+/* .faq-title {
+  padding: 33px 0;
+} */
+.faq-title > h3 {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+}
+.faq-quotes {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.accordion {
+  padding: 10px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-header > h3 {
+  align-self: center;
+  padding: 5px 0;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.accordion-header > img {
+  width: 10px;
+  object-fit: cover;
+}
+.accordion-content > p {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #535353;
+  transition: 0.7s;
+}
+.accordion-content > p.active {
+  display: block;
+}
+.accordion-content > p.inactive {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .faq {
+    padding: 80px 0;
+    margin-top: 80px;
+    margin-bottom: -100px;
+  }
+  .faq-title > h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .faq-quotes {
+    width: 70%;
+  }
+  .accordion {
+    margin: 5px 0;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    border-bottom: none;
+  }
+  .accordion-header > h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .accordion-content > p {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .faq {
+    padding: 130px 0;
+    margin-top: 130px;
+    margin-bottom: -150px;
+  }
+  .faq-title > h3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .faq-quotes {
+    width: 70%;
+  }
+  .accordion {
+    padding: 20px 30px;
+  }
+  .accordion-header > h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .accordion-content > p {
+    padding: 15px 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

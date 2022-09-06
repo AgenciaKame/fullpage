@@ -1,0 +1,126 @@
+.home-about {
+  margin-top: 50px;
+}
+.home-about-image {
+  display: flex;
+  justify-content: center;
+}
+.home-about-image > img {
+  width: 310px;
+  height: 263px;
+  object-fit: cover;
+  filter: drop-shadow(-15px 19px 34px rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
+}
+.home-about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+.home-about-info > h3 {
+  margin-top: 40px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-align: center;
+}
+.home-about-info > p {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #535353;
+  margin: 20px auto;
+}
+.home-about-info > button {
+  width: 166px;
+  height: 40px;
+  margin: 0 auto;
+  background: #d67448;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .home-about {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .home-about-image {
+    align-items: center;
+  }
+  .home-about-image > img {
+    width: 250px;
+    height: 280px;
+  }
+  .home-about-info {
+    align-items: flex-start;
+    width: 50%;
+    margin: 0 80px;
+  }
+  .home-about-info > h3 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .home-about-info > p {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+  }
+  .home-about-info > button {
+    width: 166px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home-about {
+    padding-top: 200px;
+  }
+  .home-about-image > img {
+    width: 481px;
+    height: 536px;
+    filter: drop-shadow(-68px 73px 34px rgba(0, 0, 0, 0.1));
+    border-radius: 40px;
+  }
+  .home-about-info > h3 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .home-about-info > p {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+  }
+  .home-about-info > button {
+    width: 231px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+  }
+}

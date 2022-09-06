@@ -1,0 +1,89 @@
+.about-banner {
+  margin-top: 50px;
+}
+.about-banner-quote {
+  padding-top: 30px;
+}
+.about-banner-quote > h2 {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+.about-banner-text {
+  margin-top: 30px;
+  width: 100%;
+  height: 126px;
+  background: #d67448;
+}
+.about-banner-text > ul {
+  width: 90%;
+  max-width: 310px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-banner-text > ul > li {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.about-banner-text > ul > li:last-child {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about-banner {
+    margin-top: 100px;
+  }
+  .about-banner-quote > h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .about-banner-text {
+    margin-top: 80px;
+    height: 250px;
+  }
+  .about-banner-text > ul {
+    width: 75%;
+    max-width: 1040px;
+    justify-content: space-between;
+  }
+  .about-banner-text > ul > li {
+    width: 45%;
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .about-banner-text > ul > li:last-child {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-banner {
+    margin-top: 180px;
+  }
+  .about-banner-quote > h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .about-banner-text {
+    margin-top: 120px;
+    height: 397px;
+  }
+  .about-banner-text > ul > li {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
