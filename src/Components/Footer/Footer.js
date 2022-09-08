@@ -7,11 +7,6 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const mobile = window.innerWidth < 768 ? true : false;
-  function scrollToTop() {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100)
-  }
   return (
     <footer className="footer">
       <div className="footer-logo">
@@ -37,19 +32,13 @@ const Footer = () => {
         <div className="footer-media-menu">
           <ul>
             <li>
-              <Link onClick={scrollToTop} to="/about">
-                About
-              </Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <Link onClick={scrollToTop} to="/proyects">
-                Proyects
-              </Link>
+              <Link to="/proyects">Proyects</Link>
             </li>
             <li>
-              <Link onClick={scrollToTop} to="/services">
-                Services
-              </Link>
+              <Link to="/services">Services</Link>
             </li>
           </ul>
         </div>

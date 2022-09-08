@@ -26,25 +26,13 @@
   width: 100%;
   object-fit: cover;
 }
-.carousel-controls-proy {
-  z-index: 15;
-  position: absolute;
-  top: 120px;
-  left: 0;
-  right: 0;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
 .carousel-proyects {
   position: absolute;
-  top: 48px;
+  top: 55px;
   left: 0;
   right: 0;
   margin: 0 auto;
   width: 50%;
-  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,8 +53,9 @@
   font-size: 12px;
   line-height: 16px;
   color: #535353;
+  margin: 20px 0;
 }
-.carousel-proyects > span {
+.carousel-proyects > a {
   display: block;
   font-family: "SF UI Display";
   font-style: normal;
@@ -75,25 +64,39 @@
   line-height: 19px;
   text-align: center;
   color: #888888;
+  cursor: pointer;
 }
-.carousel-target-proy {
-  position: absolute;
-  top: 228px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 67px;
-  height: 11px;
-  display: flex;
-  justify-content: space-between;
+.swiper-proyects > .swiper-button-prev,
+.swiper-proyects > .swiper-button-next {
+  top: calc(50% + 15px);
+  width: 13px;
+  height: 22px;
+  color: #9bc3bf;
 }
-.carousel-target-proy > div {
+.swiper-proyects > .swiper-button-prev::after,
+.swiper-proyects > .swiper-button-next::after {
+  font-size: 35px;
+  font-weight: 900;
+}
+.swiper-proyects > .swiper-button-prev {
+  left: 15%;
+}
+.swiper-proyects > .swiper-button-next {
+  right: 15%;
+}
+.swiper-proyects > .swiper-pagination {
+  bottom: 40px;
+}
+.swiper-proyects > .swiper-pagination > .swiper-pagination-bullet {
   width: 11px;
   height: 11px;
   background: rgba(214, 116, 72, 0.5);
-  border-radius: 50%;
+  margin: 0 10px;
+  opacity: 1;
 }
-.carousel-target-proy > div.current {
+.swiper-proyects
+  > .swiper-pagination
+  > .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #d67448;
 }
 
@@ -105,52 +108,84 @@
     font-size: 26px;
     line-height: 30px;
   }
-  .carousel-proyects-desktop {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    margin: 0 auto;
-    gap: 15px;
-    width: 90%;
+  .home-proyects-carousel {
+    width: 100%;
   }
-  .proyect-desktop {
-    position: relative;
-    width: 200px;
+  .home-proyects-carousel > .carousel-proyects {
+    padding: 0 30px;
     opacity: 0.7;
   }
-  .proyect-desktop > h3 {
-    width: 160px;
-    margin: 0 auto;
-    font-size: 22px;
-    line-height: 26px;
-    text-align: center;
+  .swiper-proyects {
+    margin-top: 75px;
+    padding-bottom: 30px;
   }
-  .proyect-desktop > p {
-    font-size: 12px;
-    line-height: 14px;
-    margin: 8px 0;
-    padding: 0 10px;
-    text-align: center;
+  .swiper-slide.swiper-slide-next.proyects-slide {
+    margin-top: 30px;
+    overflow: visible;
   }
-  .proyect-desktop > span {
-    display: block;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
+  .swiper-slide.swiper-slide-next.proyects-slide > .home-proyects-carousel {
+    width: 100%;
+    background-image: url("../../Assets/home-proyects-bg-lg.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
-  .proyect-desktop.main {
-    width: 230px;
-    margin-top: 80px;
+  .swiper-slide.swiper-slide-next.proyects-slide
+    > .home-proyects-carousel
+    > .carousel-proyects {
+    top: 70px;
+    padding: 0 30px;
     opacity: 1;
   }
-  .proyect-desktop.main > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
+  .swiper-proyects > .swiper-button-prev {
+    left: 25%;
   }
-  .proyect-desktop.main > h3 {
-    margin-top: 40px;
+  .swiper-proyects > .swiper-button-next {
+    right: 25%;
+  }
+  .swiper-proyects > .swiper-pagination {
+    bottom: 10px;
+  }
+  .swiper-proyects > .swiper-pagination > .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    background: #d9d9d9;
+    margin: 0 10px;
+    opacity: 1;
+  }
+  .swiper-proyects
+    > .swiper-pagination
+    > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #a2a2a2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-proyects {
+    margin-top: 150px;
+  }
+  .home-proyects-title > h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .home-proyects-info {
+    margin-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .swiper-proyects {
+    padding-bottom: 50px;
+  }
+  .home-proyects-carousel > .carousel-proyects > h3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .home-proyects-carousel > .carousel-proyects > p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .home-proyects-carousel > .carousel-proyects > a {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

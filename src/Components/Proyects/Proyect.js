@@ -1,9 +1,9 @@
 import "./Proyects.css";
 
-const Proyect = ({ imageMobile, imageDesktop, span, title, text }) => {
+const Proyect = ({ imageMobile, imageDesktop, span, title, text, id }) => {
   const mobile = window.innerWidth < 768 ? true : false;
   return (
-    <div className="proyect">
+    <div className="proyect" id={id}>
       <div className="proyect-image">
         {mobile === true ? (
           <img src={imageMobile} alt="pic" />

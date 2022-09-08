@@ -36,37 +36,10 @@
   margin-top: 50px;
   height: 300px;
 }
-.carousel-controls {
-  z-index: 3;
-  position: absolute;
-  top: 86px;
-  left: 0;
-  right: 0;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
-.carousel-controls > img {
-  width: 13px;
-  height: 22px;
-  object-fit: cover;
-}
-.carousel-brand {
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-items: center;
-  align-content: center;
+.swiper-brand {
+  padding-bottom: 60px !important;
 }
 .message-box {
-  grid-row: 1/2;
-  grid-column: 1/2;
   width: 239px;
   height: 215px;
   margin: 0 auto;
@@ -103,6 +76,9 @@
   justify-content: center;
   align-items: center;
   border: none;
+  cursor: pointer;
+}
+.message-box > button > a {
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 500;
@@ -111,24 +87,37 @@
   color: #000000;
   text-transform: uppercase;
 }
-.carousel-target {
-  position: absolute;
-  top: 250px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 67px;
-  height: 11px;
-  display: flex;
-  justify-content: space-between;
+.swiper-brand > .swiper-button-prev,
+.swiper-brand > .swiper-button-next {
+  top: calc(50% + 15px);
+  width: 13px;
+  height: 22px;
+  color: #9bc3bf;
 }
-.carousel-target > div {
+.swiper-brand > .swiper-button-prev::after,
+.swiper-brand > .swiper-button-next::after {
+  font-size: 35px;
+  font-weight: 900;
+}
+.swiper-brand > .swiper-button-prev {
+  left: 10%;
+}
+.swiper-brand > .swiper-button-next {
+  right: 10%;
+}
+.swiper-brand > .swiper-pagination {
+  bottom: 10px;
+}
+.swiper-brand > .swiper-pagination > .swiper-pagination-bullet {
   width: 11px;
   height: 11px;
   background: rgba(214, 116, 72, 0.5);
-  border-radius: 50%;
+  margin: 0 10px !important;
+  opacity: 1;
 }
-.carousel-target > .current {
+.swiper-brand
+  > .swiper-pagination
+  > .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #d67448;
 }
 
@@ -202,7 +191,9 @@
     justify-content: center;
     align-items: center;
     border: none;
-
+    cursor: pointer;
+  }
+  .message-desktop > button > a {
     font-family: "SF UI Display";
     font-style: normal;
     font-weight: 500;

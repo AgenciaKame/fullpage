@@ -1,9 +1,9 @@
 import "./Services.css";
 
-const Service = ({ imageMobile, imageDesktop, title, paragraph1, paragraph2 }) => {
+const Service = ({ imageMobile, imageDesktop, title, paragraph1, paragraph2, id }) => {
   const mobile = window.innerWidth < 768 ? true : false;
   return (
-    <div className="service">
+    <div className="service" id={id}>
       <div className="service-image">
         {mobile === true ? (
           <img src={imageMobile} alt="pic" />

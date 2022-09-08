@@ -12,7 +12,7 @@ const Navbar = () => {
     setTimeout(() => {
       let element = document.getElementById(id);
       let posY = element.getBoundingClientRect().y;
-      window.scrollTo(0, posY);
+      window.scrollTo({top: posY, behavior:'smooth'});
     }, 300);
   }
   return (

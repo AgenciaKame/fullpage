@@ -11,6 +11,7 @@ const Services = () => {
   return (
     <section className="services">
       <Service
+        id='webDesign'
         imageMobile={serviceMobileOne}
         imageDesktop={serviceDesktopOne}
         title="Web Design"
@@ -22,6 +23,7 @@ const Services = () => {
         possimus, exercitationem asperiores accusamus ullam, atque in?"
       />
       <Service
+        id='brandDesign'
         imageMobile={serviceMobileTwo}
         imageDesktop={serviceDesktopTwo}
         title="Brand Design"
@@ -33,6 +35,7 @@ const Services = () => {
         possimus, exercitationem asperiores accusamus ullam, atque in?"
       />
       <Service
+        id='photography'
         imageMobile={serviceMobileThree}
         imageDesktop={serviceDesktopThree}
         title="Photography"

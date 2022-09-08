@@ -17,6 +17,7 @@ const Proyects = () => {
       </div>
       <div className="proyects-group">
         <Proyect
+          id='proyectOne'
           imageMobile={proyectOneMobile}
           imageDesktop={proyectOneDesktop} 
           span='Proyect One'
@@ -24,6 +25,7 @@ const Proyects = () => {
           text='Im baby portland put a bird on it blog letterpress bitters yuccie. Im baby portland put a bird on it blog letterpress bitters yuccie. Im baby portland put a bird on it blog letterpress bitters yuccie. Im baby portland put a bird on it blog letterpress bitters yuccie.'
         />
         <Proyect
+          id='proyectTwo'
           imageMobile={proyectTwoMobile}
           imageDesktop={proyectTwoDesktop}
           span='Proyect Two'
@@ -31,6 +33,7 @@ const Proyects = () => {
           text='Im baby portland put a bird on it blog letterpress bitters yuccie. Im baby portland put a bird on it blog letterpress bitters yuccie. Im baby portland put a bird on it blog letterpress bitters yuccie. Im baby portland put a bird on it blog letterpress bitters yuccie.'
         />
         <Proyect
+          id='proyectThree'
           imageMobile={proyectThreeMobile}
           imageDesktop={proyectThreeDesktop}
           span='Proyect Three'
