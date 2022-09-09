@@ -11,6 +11,8 @@ import imageSix from '../../Assets/home-grid-image-6.png'
 import imageSeven from '../../Assets/home-grid-image-7.png'
 import imageEight from '../../Assets/home-grid-image-8.png'
 import imageNine from '../../Assets/home-grid-image-9.png'
+import imageColor from '../../Assets/color.jpg'
+import imageCoffee from '../../Assets/coffe-cup.jpg'
 
 
 const HomeContact = () => {
@@ -48,8 +50,8 @@ const HomeContact = () => {
           </ul>
         </div>
         <div className="contact-images">
-          <img src={imageOne} alt="grid-img" />
-          <img src={imageTwo} alt="grid-img" />
+          <img src={imageCoffee} alt="grid-img" />
+          <img src={imageColor} alt="grid-img" />
           <img src={imageThree} alt="grid-img" />
           <img src={imageFour} alt="grid-img" />
           <img src={imageFive} alt="grid-img" />
