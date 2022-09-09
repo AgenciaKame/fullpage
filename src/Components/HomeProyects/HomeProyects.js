@@ -23,7 +23,7 @@ const HomeProyects = () => {
   return (
     <section className="home-proyects">
       <div className="home-proyects-title">
-        <h2>Recent Proyects</h2>
+        <h2>Featured Proyects</h2>
       </div>
       <div className="home-proyects-info">
         <SwiperProyects data={data} />

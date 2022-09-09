@@ -49,14 +49,6 @@ const MenuMobile = ({setIsMenuOpened, scroll}) => {
             image={contactLogo}
           />
         </ul>
-        <div className="menu-mobile-bottom">
-          <LinkMobile
-            path="/"
-            setIsMenuOpened={setIsMenuOpened}
-            value="Logout"
-            image={logoutLogo}
-          />
-        </div>
       </div>
       <div className="bg-mobile"></div>
     </div>
