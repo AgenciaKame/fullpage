@@ -48,20 +48,20 @@ const HomeContact = () => {
           </ul>
         </div>
         <div className="contact-images">
-          <img src={imageCoffee} alt="grid-img" />
-          <img src={imageColor} alt="grid-img" />
-          <img src={imageThree} alt="grid-img" />
-          <img src={imageFour} alt="grid-img" />
-          <img src={imageFive} alt="grid-img" />
-          <img src={imageSix} alt="grid-img" />
+          <img src={imageCoffee} alt="grid-img" loading="lazy" />
+          <img src={imageColor} alt="grid-img" loading="lazy" />
+          <img src={imageThree} alt="grid-img" loading="lazy" />
+          <img src={imageFour} alt="grid-img" loading="lazy" />
+          <img src={imageFive} alt="grid-img" loading="lazy" />
+          <img src={imageSix} alt="grid-img" loading="lazy" />
           {mobile === false ? (
-            <img src={imageSeven} alt="grid-img" />
+            <img src={imageSeven} alt="grid-img" loading="lazy" />
           ) : null}
           {mobile === false ? (
-            <img src={imageEight} alt="grid-img" />
+            <img src={imageEight} alt="grid-img" loading="lazy" />
           ) : null}
           {mobile === false ? (
-            <img src={imageNine} alt="grid-img" />
+            <img src={imageNine} alt="grid-img" loading="lazy" />
           ) : null}
         </div>
       </section>

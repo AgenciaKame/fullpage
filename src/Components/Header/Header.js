@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div className="header">
       {pathname === "/" ? (
-        <img className="image-home" src={headerBG} alt="header-bg" />
+        <img className="image-home" src={headerBG} alt="header-bg" loading="lazy" />
         ) : (
         <img src={headerBG} alt="header-bg" />
       )}
