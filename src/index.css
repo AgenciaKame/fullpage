@@ -1,5 +1,18 @@
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('./Fonts/SFUI/sf-ui-display-medium-58646be638f96.otf');
+}
+@font-face {
+  font-family: 'SF Pro Display Medium';
+  src: url('./Fonts/SFPro/OpenType/SF-Pro-Display-Medium.otf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  font-family: -apple-system, BlinkMacSystemFont;
+  font-family: 'SF Pro Display Medium', -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -7,11 +20,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 li {
   list-style-type: none;

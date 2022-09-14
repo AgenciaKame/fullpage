@@ -2,8 +2,6 @@ import HomeBanner from "./HomeBanner";
 import "./HomeContact.css";
 import ws from '../../Assets/home-contact-ws.png'
 import email from '../../Assets/home-contact-email.png'
-import imageOne from '../../Assets/home-grid-image-1.png'
-import imageTwo from '../../Assets/home-grid-image-2.png'
 import imageThree from '../../Assets/home-grid-image-3.png'
 import imageFour from '../../Assets/home-grid-image-4.png'
 import imageFive from '../../Assets/home-grid-image-5.png'
@@ -11,8 +9,8 @@ import imageSix from '../../Assets/home-grid-image-6.png'
 import imageSeven from '../../Assets/home-grid-image-7.png'
 import imageEight from '../../Assets/home-grid-image-8.png'
 import imageNine from '../../Assets/home-grid-image-9.png'
-import imageColor from '../../Assets/color.jpg'
-import imageCoffee from '../../Assets/coffe-cup.jpg'
+import imageColor from '../../Assets/color-2.jpg'
+import imageCoffee from '../../Assets/coffe-cup-2.jpg'
 
 
 const HomeContact = () => {

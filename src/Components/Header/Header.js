@@ -1,5 +1,5 @@
 import "./Header.css";
-import headerBG from "../../Assets/header-bg.png";
+import headerBG from "../../Assets/header-bg.jpg";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
