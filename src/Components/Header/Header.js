@@ -1,5 +1,5 @@
 import "./Header.css";
-import headerBG from "../../Assets/header-bg.jpg";
+import headerBG from "../../Assets/header-bg-2.jpg";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div className="header">
       {pathname === "/" ? (
-        <img className="image-home" src={headerBG} alt="header-bg" loading="lazy" />
+        <img className="image-home" src={headerBG} alt="header-bg" />
         ) : (
         <img src={headerBG} alt="header-bg" />
       )}
