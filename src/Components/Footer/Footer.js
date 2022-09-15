@@ -3,6 +3,7 @@ import footerLogo from "../../Assets/footer-logo.png";
 import instagram from "../../Assets/footer-instagram.png";
 import facebook from "../../Assets/footer-facebook.png";
 import linkedin from "../../Assets/footer-linkedin.png";
+import kame from '../../Assets/8.png'
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -44,7 +45,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copy">
-        <p>© Photo, Inc. 2019. We love our users!</p>
+        <p>©2022 - Diseñado por Agencia Kame</p>
+        <img src={kame} alt='kame' />
       </div>
     </footer>
   );
