@@ -11,10 +11,12 @@
 .footer-logo {
   padding-left: 10%;
   align-self: flex-start;
+}
+.footer-logo > a {
   display: flex;
   align-items: center;
 }
-.footer-logo > span {
+.footer-logo > a > span {
   display: block;
   font-family: "Comfortaa";
   font-style: normal;
@@ -90,7 +92,7 @@
     grid-row: 1/2;
     align-self: center;
   }
-  .footer-logo > span {
+  .footer-logo > a > span {
     font-size: 22px;
     line-height: 26px;
   }
@@ -125,7 +127,7 @@
   .footer {
     margin-top: 150px;
   }
-  .footer-logo > span {
+  .footer-logo > a > span {
     font-size: 28px;
     line-height: 31px;
   }

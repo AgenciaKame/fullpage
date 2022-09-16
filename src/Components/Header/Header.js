@@ -1,10 +1,14 @@
 import "./Header.css";
 import headerBG from "../../Assets/header-bg-2.jpg";
+import headerLine from "../../Assets/line-bg-header.png";
+
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import HeaderMedia from "./HeaderMedia";
 
 const Header = () => {
+  const mobile = window.innerWidth < 768 ? true : false;
   const [purpose, setPurpose] = useState("Profesion");
   const pathname = useLocation().pathname;
   useEffect(() => {
@@ -25,6 +29,12 @@ const Header = () => {
         ) : (
         <img src={headerBG} alt="header-bg" />
       )}
+      {mobile === false ? (
+        <>
+          <img className="line-bg" src={headerLine} alt='bg' />
+          <HeaderMedia />
+        </>
+      ) : null}
       <Navbar />
       <div className="header-title">
         <h2>Your {purpose}</h2>

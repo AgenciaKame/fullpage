@@ -11,8 +11,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <img src={footerLogo} alt="logo" />
-        <span>Logotipo</span>
+        <Link to='/'>
+          <img src={footerLogo} alt="logo" />
+          <span>Logotipo</span>
+        </Link>
       </div>
       <div className="footer-media">
         {mobile === true ? (
