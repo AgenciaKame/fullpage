@@ -15,8 +15,8 @@ function App() {
         <Route path="/about" element={<AboutPage title='AK - About' />} />
         <Route path="/services" element={<ServicesPage title='AK - Services' />} />
         <Route path="/proyects" element={<ProyectsPage title='AK - Proyects' />} />
-        <Route path="/" element={<HomePage title='AK - Home' />} />
-        <Route path="*" element={<Navigate to='/' replace />} />
+        <Route path="/fullpage" element={<HomePage title='AK - Home' />} />
+        <Route path="*" element={<Navigate to='/fullpage' replace />} />
       </Routes>
       <Footer />
     </BrowserRouter>
